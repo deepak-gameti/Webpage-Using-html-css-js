@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div id="background"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/component/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <button id="dark-mode-btn">Dark Mode</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h2>Our Address</h2>
+                    <p>1234 Street Name,<br>City, State, 12345</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Phone</h2>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Email</h2>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="map">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8694119735647!2d-74.0060154845927!3d40.712743979330496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1b69b1d85d%3A0x3d2a1f604b5e51c5!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1616430935116!5m2!1sen!2sus" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
